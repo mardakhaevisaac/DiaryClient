@@ -1,3 +1,5 @@
+"use client";
+
 import {DayItem, DayService} from "@/entities/day";
 import NoteForm from "@/features/NoteForm";
 
