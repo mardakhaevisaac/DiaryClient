@@ -12,12 +12,16 @@ export default async function DayPage({ params }: DayPageProps) {
 
     const day = await DayService.getDayById(Number(id));
 
+    function closeInput() {
+
+    }
+    
     return (
         <div className="">
             <main className="">
 
                 <DayItem showNotes={true} day={day}/>
-                <NoteForm dayId={day.id} parentNoteId={null}/>
+                <NoteForm closeInput={closeInput} dayId={day.id} parentNoteId={null}/>
             </main>
         </div>
     );
